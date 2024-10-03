@@ -1,0 +1,33 @@
+x=int(input("What is your age in years?"))
+days=int(x*365)
+decades=x/10
+weeks=days/7
+minutes=days*24*60
+print("you have been alive for",days,"days,",decades," decades,",weeks," weeks, and",minutes,"minutes")
+
+
+x=int(input("What is the width of the field?"))
+y=int(input("What is the length of the field"))
+z=int(input("What is the cost of the field in square feet?"))
+P=x+x+y+y
+A=x*y
+C=x*y*z
+print("the perimeter is",P,", the area is",A,", and the cost is",C)
+
+
+import math
+x=int(input("where is the first cut?"))
+y=int(input("where is the second cut(must be larger1 than the first value)?"))
+a=y-x
+b=20-a-y
+Area=math.sqrt(10.0*(10-a)*(10-y)*(10-b))
+print("the triangle will have cuts", a,y,b)
+print("the area of your triangle is", Area)
+
+
+
+x= int(input("how many zombies are there on day 0?"))
+y= int(input("how many new people get infected every day?"))
+z= int(input("what day is it?"))
+numofzom=(x*y+x)**y
+print("There are",numofzom,"zombies on day",z)
